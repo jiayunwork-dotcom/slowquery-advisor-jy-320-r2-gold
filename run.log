@@ -1,0 +1,3 @@
+usage:
+  slowquery-advisor analyze --log FILE [--format text|json] [--min-time SECONDS]
+error: missing command

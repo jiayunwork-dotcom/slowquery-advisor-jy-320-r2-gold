@@ -1,0 +1,20 @@
+# Time: 2024-01-01T10:00:00Z
+# User@Host: app[app] @ db1 []
+# Query_time: 12.345678  Lock_time: 0.000123 Rows_sent: 1  Rows_examined: 99999
+SET timestamp=1704103200;
+SELECT * FROM orders WHERE customer_name = 'acme' AND status = 'open';
+# Time: 2024-01-01T10:05:00Z
+# User@Host: app[app] @ db1 []
+# Query_time: 13.100000  Lock_time: 0.000100 Rows_sent: 1  Rows_examined: 99999
+SET timestamp=1704103500;
+SELECT * FROM orders WHERE customer_name = 'globex' AND status = 'open';
+# Time: 2024-01-01T10:10:00Z
+# User@Host: app[app] @ db1 []
+# Query_time: 0.500000  Lock_time: 0.000010 Rows_sent: 25  Rows_examined: 25
+SET timestamp=1704103800;
+SELECT * FROM products WHERE category = 'book';
+# Time: 2024-01-01T10:15:00Z
+# User@Host: app[app] @ db1 []
+# Query_time: 8.200000  Lock_time: 0.000050 Rows_sent: 3  Rows_examined: 80000
+SET timestamp=1704104100;
+SELECT * FROM logs WHERE message LIKE '%timeout%';

@@ -1,0 +1,5 @@
+?   	slowquery-advisor	[no test files]
+ok  	slowquery-advisor/internal/analysis	0.004s
+?   	slowquery-advisor/internal/report	[no test files]
+ok  	slowquery-advisor/internal/fingerprint	0.006s
+ok  	slowquery-advisor/internal/parse	0.007s
