@@ -32,6 +32,9 @@ func Aggregate(entries []parse.Entry) *Result {
 		}
 		s.Count++
 		s.TotalTime += e.QueryTime
+		if e.QueryTime > s.MaxTime {
+			s.MaxTime = e.QueryTime
+		}
 		if e.RowsSent > s.MaxSent {
 			s.MaxSent = e.RowsSent
 		}
